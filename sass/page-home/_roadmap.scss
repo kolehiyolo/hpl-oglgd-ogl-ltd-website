@@ -1,23 +1,9 @@
-html {
-    body {
-        * {
-            box-sizing: border-box;
-            padding: 0;
-            margin: 0;
-        }
-    }
-}
-
-html {
-    body {
-        background-color: black;
-        color: white;
+&-roadmap {
+    // * Styles that apply to all
+    @media (min-width: 0px) {
         position: relative;
-        min-height: 100vh;
-        font-family: monospace;
-
-
-        .section {
+    
+        &-graphic {
             position: absolute;
             top: 50%;
             left: 50%;
@@ -27,33 +13,33 @@ html {
             display: grid;
             grid-template-columns: repeat(6, 1fr);
             grid-template-rows: 1fr 1fr;
-
+    
             div {
                 border: solid 4px white;
                 position: relative;
                 width: 100%;
             }
-
+        
             .box-1 {
                 grid-column: 2 / span 2;
             }
-
+        
             .box-2 {
                 grid-column: 4 / span 2;
             }
-
+        
             .box-3 {
                 grid-column: 6 / span 1;
             }
-
+        
             .box-4 {
                 grid-column: 3 / span 2;
             }
-
+        
             .box-5 {
                 grid-column: 5 / span 2;
             }
-
+        
             div {
                 .content {
                     width: 300px;
@@ -64,20 +50,20 @@ html {
                     padding: 20px;
                 }
             }
-
-
-
+        
+        
+        
             .box-1,
             .box-2,
             .box-3 {
                 .content {
                     transform: translate(-50%, -50%);
                 }
-
+        
                 border-top: none;
                 border-right: none;
                 position: relative;
-
+        
                 &:after {
                     content: '';
                     position: absolute;
@@ -87,20 +73,20 @@ html {
                     border: solid 2px white;
                     border-radius: 50%;
                     bottom: 0;
-                    transform: translate(calc(-50% - 2px),50%);
+                    transform: translate(calc(-50% - 2px), 50%);
                 }
             }
-
+        
             .box-4,
             .box-5 {
                 .content {
                     transform: translate(-50%, 50%);
                 }
-
+        
                 border-top: none;
                 border-right: none;
                 border-bottom: none;
-
+        
                 &:after {
                     content: '';
                     position: absolute;
@@ -109,14 +95,14 @@ html {
                     background-color: grey;
                     border: solid 2px white;
                     border-radius: 50%;
-                    transform: translate(calc(-50% - 2px),-50%);
-
+                    transform: translate(calc(-50% - 2px), -50%);
+        
                 }
             }
-
+        
             .box-3 {
                 border-bottom: none;
             }
-       }
+        }
     }
 }
