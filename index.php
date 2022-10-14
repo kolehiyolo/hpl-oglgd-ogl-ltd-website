@@ -7,6 +7,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/home.css">
     <title>OGL Ltd | Home</title>
+
+    <!-- * Owl Carousel -->
+    <!-- <link rel="stylesheet" href="owlcarousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="owlcarousel/owl.theme.default.min.css"> -->
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css'>
+
 </head>
 
 <body>
@@ -34,57 +40,11 @@
                 <h2>Media Mentions</h2>
             </div>
             <div class="main-media-body">
-                
+
             </div>
         </section>
-        <section class="main-roadmap">
-            <h2>Roadmap</h2>
-            <div class="main-roadmap-graphic">
-                <div class="box-1">
-                    <div class="content">
-                        <h2>Box 1</h2>
-                        <p>text1</p>
-                        <p>text2</p>
-                        <p>text3</p>
-                    </div>
-                </div>
-                <div class="box-2">
-                    <div class="content">
-                        <h2>Box 2</h2>
-                        <p>text1</p>
-                        <p>text2</p>
-                        <p>text3</p>
-                    </div>
-                </div>
-                <div class="box-3">
-                    <div class="content">
-                        <h2>Box 3</h2>
-                        <p>text1</p>
-                        <p>text2</p>
-                        <p>text3</p>
-                    </div>
-                </div>
-                <div class="box-4">
-                    <div class="content">
-                        <h2>Box 4</h2>
-                        <p>text1</p>
-                        <p>text2</p>
-                        <p>text3</p>
-                    </div>
-                </div>
-                <div class="box-5">
-                    <div class="content">
-                        <h2>Box 5</h2>
-                        <p>text1</p>
-                        <p>text2</p>
-                        <p>text3</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="main-team">
-            <h1>Team</h1>
-        </section>
+        <?php include 'pages/home/roadmap.php'; ?>
+        <?php include 'pages/home/team.php'; ?>
         <section class="main-advisors">
             <h1>Advisors</h1>
         </section>
@@ -102,6 +62,26 @@
 
     <footer class="footer">
     </footer>
+
+    <!-- * Owl Carousel Scripts -->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js'></script>
+    <script>
+        $(document).ready(function () {
+            $(".owl-carousel").owlCarousel({
+                loop: false,
+                margin: 20,
+                nav: false,
+                center: true,
+                // center: false,
+                autoWidth: true,
+                startPosition: 5,
+                // freeDrag: true,
+                // touchDrag: false,
+                // pullDrag: false,
+            });
+        });
+    </script>
 </body>
 
 </html>
