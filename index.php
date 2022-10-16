@@ -6,13 +6,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/home.css">
+    <!-- <link rel="stylesheet" href="css/test.css"> -->
     <title>OGL Ltd | Home</title>
 
     <!-- * Owl Carousel -->
     <!-- <link rel="stylesheet" href="owlcarousel/owl.carousel.min.css">
     <link rel="stylesheet" href="owlcarousel/owl.theme.default.min.css"> -->
     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css'>
-
 </head>
 
 <body>
@@ -62,26 +62,6 @@
 
     <footer class="footer">
     </footer>
-
-    <!-- * Owl Carousel Scripts -->
-    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script>
-    <script src='https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js'></script>
-    <script>
-        $(document).ready(function () {
-            $(".owl-carousel").owlCarousel({
-                loop: false,
-                margin: 20,
-                nav: false,
-                center: true,
-                // center: false,
-                autoWidth: true,
-                startPosition: 5,
-                // freeDrag: true,
-                // touchDrag: false,
-                // pullDrag: false,
-            });
-        });
-    </script>
 </body>
 
 </html>

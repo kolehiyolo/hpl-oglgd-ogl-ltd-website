@@ -1,33 +1,33 @@
-@import "../modules/_macro.scss";
-@import "../modules/_header.scss";
+// @import "../modules/_macro.scss";
+// @import "../modules/_header.scss";
 
 html {
     body {
-        background-color: black;
-        color: white;
-        position: relative;
-        min-height: 100vh;
-        font-family: monospace;
+        // background-color: black;
+        // color: white;
+        // position: relative;
+        // min-height: 100vh;
+        // font-family: monospace; 
 
         .main {
-            section {
-                min-height: 100vh;
-                border: solid 2px white;
-                padding: 50px 100px;
-            }
+            // section {
+            //     min-height: 100vh;
+            //     border: solid 2px white;
+            //     padding: 50px 100px;
+            // }
 
-            @import "_hero.scss";
-            @import "_lore.scss";
-            @import "_connector.scss";
-            @import "_opportunity.scss";
-            @import "_features.scss";
-            @import "_media.scss";
-            @import "_roadmap.scss";
+            // @import "_hero.scss";
+            // @import "_lore.scss";
+            // // @import "_connector.scss";
+            // @import "_opportunity.scss";
+            // @import "_features.scss";
+            // @import "_media.scss";
+            // @import "_roadmap.scss";
             @import "_team.scss";
-            @import "_advisors.scss";
-            @import "_bts.scss";
-            @import "_partners.scss";
-            @import "_pre_footer.scss";
+            // @import "_advisors.scss";
+            // @import "_bts.scss";
+            // @import "_partners.scss";
+            // @import "_pre_footer.scss";
         }
     }
 }

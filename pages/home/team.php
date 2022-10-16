@@ -4,48 +4,14 @@
     </div>
     <div class="main-team-body">
         <div class="main-team-body-carousel owl-carousel">
-            <div class="main-team-body-carousel-item">
-                <img src="images/test/test-profile.jpg" alt="">
-                <div class="main-team-body-carousel-item-text">
-                    <h3>Person 1</h3>
-                    <p>Person Position</p>
-                </div>
-            </div>
-            <div class="main-team-body-carousel-item">
-                <img src="images/test/test-profile.jpg" alt="">
-                <div class="main-team-body-carousel-item-text">
-                    <h3>Person 2</h3>
-                    <p>Person Position</p>
-                </div>
-            </div>
-            <div class="main-team-body-carousel-item">
-                <img src="images/test/test-profile.jpg" alt="">
-                <div class="main-team-body-carousel-item-text">
-                    <h3>Person 3</h3>
-                    <p>Person Position</p>
-                </div>
-            </div>
-            <div class="main-team-body-carousel-item">
-                <img src="images/test/test-profile.jpg" alt="">
-                <div class="main-team-body-carousel-item-text">
-                    <h3>Person 4</h3>
-                    <p>Person Position</p>
-                </div>
-            </div>
-            <div class="main-team-body-carousel-item">
-                <img src="images/test/test-profile.jpg" alt="">
-                <div class="main-team-body-carousel-item-text">
-                    <h3>Person 5</h3>
-                    <p>Person Position</p>
-                </div>
-            </div>
-            <div class="main-team-body-carousel-item">
-                <img src="images/test/test-profile.jpg" alt="">
-                <div class="main-team-body-carousel-item-text">
-                    <h3>Person 6</h3>
-                    <p>Person Position</p>
-                </div>
-            </div>
+
         </div>
     </div>
 </section>
+
+<!-- * Owl Carousel Scripts -->
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js'></script>
+
+<script src="javascript/pages/home/team.js"></script>
+<script src="javascript/pages/home/team-carousel.js"></script>

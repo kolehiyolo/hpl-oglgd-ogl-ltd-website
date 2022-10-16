@@ -6,22 +6,35 @@
     padding: 20px;
     min-height: 500px !important;
 
+    background-color: black;
+    font-family: monospace;
+    color: white;
+
+    * {
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+    }
+
     &-head,
     &-body {
-        border: solid 1px white;
+        // border: solid 1px white;
     }
 
     &-head {}
 
     &-body {
         padding: 20px;
-
+        
         &-carousel {
-            & .owl-item.center {
+            .owl-stage-outer {
+                padding: 50px 0px;
+            }
 
+            & .owl-item.center {
                 .main-team-body-carousel-item {
-                    &-text {
-                        background-color: rgb(75, 75, 75) !important;
+                    .main-team-body-carousel-item-inner {
+                        transform: rotateY(180deg);
                     }
                 }
             }
@@ -30,36 +43,99 @@
                 width: 290px;
                 height: 400px;
                 position: relative;
+                perspective: 1000px;
 
-                img {
-                    position: absolute;
-                    width: 230px !important;
-                    height: 265px !important;
-                    box-sizing: border-box;
-                    left: 50%;
-                    transform: translateX(-50%);
-                    z-index: 10;
-                }
-
-                &-text {
-                    border: solid 1px white;
-                    position: absolute;
-                    bottom: 0;
+                &-inner {
+                    position: relative;
                     width: 100%;
-                    height: 350px;
-                    display: flex;
-                    flex-direction: column;
-                    align-items: center;
-                    justify-content: flex-end;
-                    padding: 40px 0px;
-                    gap: 10px;
+                    height: 100%;
+                    text-align: center;
+                    transition: transform 0.5s;
+                    transform-style: preserve-3d;
 
-                    h3 {
-                        font-size: 23px;
+                    &-front {
+                        img {
+                            position: absolute;
+                            width: 230px !important;
+                            height: 265px !important;
+                            box-sizing: border-box;
+                            left: 50%;
+                            transform: translateX(-50%);
+                            z-index: 10;
+                        }
+
+                        &-text {
+                            border: solid 3px white;
+                            position: absolute;
+                            bottom: 0;
+                            width: 100%;
+                            height: 350px;
+                            display: flex;
+                            flex-direction: column;
+                            align-items: center;
+                            justify-content: flex-end;
+                            padding: 40px 0px;
+                            gap: 10px;
+
+                            h3 {
+                                font-size: 23px;
+                            }
+
+                            p {
+                                font-size: 17px;
+                            }
+                        }
                     }
 
-                    p {
-                        font-size: 17px;
+                    &-back {
+                        transform: rotateY(180deg);
+                        position: relative;
+
+                        &-head {
+                            border: solid 3px white;
+                            border-bottom: solid 3px black;
+                            position: absolute;
+                            top: 0;
+                            left: 50%;
+                            transform: translateX(-50%);
+                            width: 230px;
+                            height: 53px;
+                            padding: 10px;
+                            z-index: 10;
+
+                            h3 {
+                                font-size: 20px;
+                            }
+
+                            p {
+                                font-size: 15px;
+                            }
+                        }
+
+                        &-text {
+                            border: solid 3px white;
+                            position: absolute;
+                            bottom: 0;
+                            width: 100%;
+                            height: 350px;
+                            display: flex;
+                            flex-direction: column;
+                            align-items: center;
+                            padding: 20px 20px;
+                            gap: 10px;
+
+                            p {
+                                font-size: 14px;
+                            }
+                        }
+                    }
+
+                    &-front, &-back {
+                        position: absolute;
+                        width: 100%;
+                        height: 100%;
+                        -webkit-backface-visibility: hidden;
+                        backface-visibility: hidden;
                     }
                 }
             }
