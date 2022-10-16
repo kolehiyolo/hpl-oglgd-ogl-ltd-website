@@ -4,7 +4,6 @@
     </div>
     <div class="main-team-body">
         <div class="main-team-body-carousel owl-carousel">
-
         </div>
     </div>
 </section>

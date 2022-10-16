@@ -8,7 +8,7 @@ function buildHTML() {
 
         // * Front Side
         itemHTML += `<div class="${classPrefix}-inner-front">`;
-        itemHTML += `<img src="images/team/${item.img}" alt="">`;
+        itemHTML += `<img src="${item.img}" alt="">`;
         itemHTML += `<div class="${classPrefix}-inner-front-text">`;
         itemHTML += `<h3>${item.name}</h3>`;
         itemHTML += `<p>${item.position}</p>`;
